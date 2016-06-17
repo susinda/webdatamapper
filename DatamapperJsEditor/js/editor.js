@@ -66,7 +66,7 @@ function makeDirty() {
 	// call this IDE callback when you detect changes to content
 	// within your editor.
 	if (withEclipse) {
-		IDESetDirty(true);
+		//IDESetDirty(true);
 	}
 }
 
@@ -79,7 +79,7 @@ function setFocus(){
 	// if the editor is not in focus, you won't
 	// be able to capture key strokes etc.
 	
-	IDESetFocusToEditorPart();
+	//IDESetFocusToEditorPart();
 }
 
 
@@ -145,7 +145,7 @@ function execUndoableOperation(){
 	var uniqueID = "OperationID"+undoOpCount;
 	
 	if (withEclipse) {
-		IDEExecUndoableOperation(label, uniqueID);
+		//IDEExecUndoableOperation(label, uniqueID);
 	//document.getElementById("editor").value += "\nDoing " + uniqueID;
 	}
 }
